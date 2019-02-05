@@ -1,0 +1,69 @@
+body{
+    margin: 0%;
+
+
+}
+
+
+#nav-items-list{
+    list-style-type: none;
+    margin: 0%;
+    
+}
+
+li{
+
+    
+    padding: 10px;
+
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+
+}
+li:hover{
+    background-color:dodgerblue;
+    border-radius: 5px;
+
+
+
+}
+#dsc-logo{
+
+    height: 44px;
+}
+
+a.nav-a{
+
+    padding: 14px 16px;
+    font-size: 20px;
+    color: aliceblue;
+    text-decoration: none;
+}
+.header-right{
+
+    float:right;
+    margin: 0%;
+    
+
+}
+
+.nav-header-container{
+    width: 100%;
+    height: 44px;    
+    background-color:#263349;
+    margin:0%;
+    padding:10px 20px;
+
+}
+#dsc-logo{
+
+    float: left ;
+    margin: 0%;
+    vertical-align: middle;
+    line-height: 44px;
+    font-family: 'Courier New', Courier, monospace;
+    color: aliceblue;
+
+
+}
