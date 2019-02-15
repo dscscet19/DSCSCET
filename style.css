@@ -1,11 +1,21 @@
+@import url("https://fonts.googleapis.com/css?family=Open Sans");
+html{
+    scroll-behavior: smooth;
+     
+}
+
 body{
     margin: 0%;
+    background-color: #263349;
+    overflow: auto; 
 
 
 }
 
 
 #nav-items-list{
+    
+    top: 0%;
     list-style-type: none;
     margin: 0%;
     
@@ -14,25 +24,40 @@ body{
 li{
 
     
+   
     padding: 10px;
 
     text-decoration: none;
     display: inline-block;
     text-align: center;
 
-}
-li:hover{
-    background-color:dodgerblue;
-    border-radius: 5px;
-
-
+   
 
 }
-#dsc-logo{
+#About.nav-a:hover{
+    background-color: #4285F4;
+    border-radius:100px;
+    transition-duration: 1s;
 
-    height: 44px;
 }
+#Team.nav-a:hover{
+    background-color: #DB4437;
+    border-radius:100px;
+    transition-duration: 1s;
 
+}
+#Workshops.nav-a:hover{
+    background-color: #F4B400;
+    border-radius:100px;
+    transition-duration: 1s;
+
+}
+#Contact.nav-a:hover{
+    background-color: #0F9D58;
+    border-radius:100px;
+    transition-duration: 1s;
+
+}
 a.nav-a{
 
     padding: 14px 16px;
@@ -49,10 +74,16 @@ a.nav-a{
 }
 
 .nav-header-container{
-    width: 100%;
-    height: 44px;    
-    background-color:#263349;
-    margin:0%;
+
+   
+
+    position: fixed;
+   top:0%;
+    height: 44px;   
+    width: -webkit-fill-available; 
+    background-color: #141b27;
+    margin:auto;
+   
     padding:10px 20px;
 
 }
@@ -62,8 +93,162 @@ a.nav-a{
     margin: 0%;
     vertical-align: middle;
     line-height: 44px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Open Sans';
     color: aliceblue;
 
 
+
+}
+.dsc-home{
+
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    height: 100%;   
+    padding: 10px;
+    text-align: center;
+    margin: 20px;
+
+
+
+}
+h1.dsc-home{
+    color: #4285F4;
+    text-align: center;
+    font-size: 32px;
+}
+p.dsc-home{
+    padding: 20px; 
+    color: #6f737a;
+    font-size: 20px;
+
+
+}
+.dsc-image{
+    margin-top:70px;
+   
+    height:250px;
+    padding : 20px;
+    text-align: center;
+
+    margin-bottom: 35px;
+    vertical-align: middle;
+
+    
+}
+
+#dsc-title{
+
+    font-size: 32px;    
+
+    vertical-align: middle;
+    text-align: center;
+    margin: auto;
+    font-family: "Open Sans"
+    
+}
+
+
+.team{
+
+    background-color: #1E6C93;
+    padding: 20px;
+    border-radius: 50px;
+    margin: auto;
+    width: 80%;
+    border-width: 5px;
+    border-color: #f1f1f1;
+    border-style: solid;
+    box-align: center;
+    
+
+
+}
+
+h1.team{
+    color: white;
+
+}
+#container.team-members{
+   
+
+}
+img.team-member-images{
+    height: 370px;
+    width: 350px;
+}
+h3.team-members,h2.team-members{
+    color: white;
+}
+#Team-heading{
+    color: dodgerblue;
+    font-size: 60px;
+    text-align: center;
+}
+
+#list-2 {
+
+   text-align: center;
+}
+ul{
+    padding: 0px;
+    text-align: center;
+}
+div>h1{
+    color: white;
+}
+div > h2{
+    color: white;
+    font-family: "Open Sans";
+}
+div>h3{
+    color: white;
+    font-family: "Open Sans";
+
+}
+img.team-member-images{
+
+    height:320px;
+    width: 290px;
+    padding: 20px;    
+}
+#image{
+    float: left;
+
+    height: 200px;
+    width: 200px;
+}
+#scet-logo{
+    float: right;
+    height:215px;
+    width:220px;
+}
+
+#apply.apply-team-core{
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    border-radius: 10px;
+
+
+}
+#btn-apply-for-team:hover{
+    background-color:  #263349  ;
+    color: #f1f1f1;
+    transition-duration: 0.6s;
+}
+#btn-apply-for-team.apply-team-core{
+    width: 70%;
+    height: 40px;
+    font-size:20px;
+    border-radius: 10px;
+}
+
+p{
+    font-family: Lato, sans-serif;
+}
+
+hr{
+
+    color: grey;
+    width: 80%;
 }
