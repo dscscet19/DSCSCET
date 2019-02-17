@@ -6,12 +6,78 @@ html{
 
 body{
     margin: 0%;
-    background-color: #263349;
+    background-color:#F8F9F7;
     overflow: auto; 
+
+}
+li>address{
+    display: inline;
+}
+
+address> a{
+    color: #FFF;
+}
+#contact-us-list>li {
+    display: inline;
+    list-style-type: decimal;
+  
+    color: white;
+}
+#contact-us-list>li>a{
+    text-decoration: none;
+}
+#contact-us-list>li>a:hover{
+
+    text-decoration: underline;
+    color: white;
+}
+li>a{
+    color: white
+}
+
+
+contact-us-list>li:not(:last-child):hover{
+
+    text-decoration: underline;
+}
+#contact-us-list>li:not(:last-child):after{
+    content: '\2022';
+    padding-left: 1.2px;    
+}
+.site-footer{
+    margin-top: 2rem;
+
+    color: #FFF;
+    padding:2px 2px 2px 2px;
+    
+    background-color: #303c42;
 
 
 }
 
+.header-right>ul{
+    padding: 0px;
+
+}
+footer>section{
+    padding: 5px 5px 5px 5px;
+}
+.contact>ul{
+    display:block;
+   margin: auto;
+   text-align: center;
+}
+
+a.navbar-brand{
+    font-size: 26px;
+    text-decoration: none;
+    float: left ;
+    margin: 0%;
+    vertical-align: middle;
+    line-height: 44px;
+    font-family: 'Open Sans';
+    color: aliceblue;
+}
 
 #nav-items-list{
     
@@ -21,7 +87,8 @@ body{
     
 }
 
-li{
+
+#nav-items-list>li{
 
     
    
@@ -34,25 +101,25 @@ li{
    
 
 }
-#About.nav-a:hover{
+#About.nav-a:hover,#About.active{
     background-color: #4285F4;
     border-radius:100px;
     transition-duration: 1s;
 
 }
-#Team.nav-a:hover{
+#Team.nav-a:hover,#Team.active{
     background-color: #DB4437;
     border-radius:100px;
     transition-duration: 1s;
 
 }
-#Workshops.nav-a:hover{
+#Workshops.nav-a:hover,#Workshops.active{
     background-color: #F4B400;
     border-radius:100px;
     transition-duration: 1s;
 
 }
-#Contact.nav-a:hover{
+#Contact.nav-a:hover,#Contact.active{
     background-color: #0F9D58;
     border-radius:100px;
     transition-duration: 1s;
@@ -75,9 +142,10 @@ a.nav-a{
 
 .nav-header-container{
 
-   
+    box-shadow: 0px 5px 4px rgba(66, 20, 175, 0.1);
 
-    position: fixed;
+
+    position: sticky;
    top:0%;
     height: 44px;   
     width: -webkit-fill-available; 
@@ -87,7 +155,7 @@ a.nav-a{
     padding:10px 20px;
 
 }
-#dsc-logo{
+#dsc-brand{
 
     float: left ;
     margin: 0%;
@@ -101,16 +169,23 @@ a.nav-a{
 }
 .dsc-home{
 
-    background-color: #f1f1f1;
+
+    background-color: white;
     border-radius: 10px;
     height: 100%;   
     padding: 10px;
     text-align: center;
-    margin: 20px;
-
-
+    margin: 20px 100px 20px 100px;
+   
+}
+div.dsc-home{
+    border-color: rgba(0, 0, 0, 0.125);
+   border-radius: 10px;   
+    border-width: 1px;
+    border-style: solid;
 
 }
+
 h1.dsc-home{
     color: #4285F4;
     text-align: center;
@@ -138,8 +213,8 @@ p.dsc-home{
 
 #dsc-title{
 
-    font-size: 32px;    
-
+    font-size: 32px;
+    color: #1E6C93;
     vertical-align: middle;
     text-align: center;
     margin: auto;
@@ -147,16 +222,20 @@ p.dsc-home{
     
 }
 
+#dsc-title>h3{
+    color:#0F9D58;
+}
+
 
 .team{
 
     background-color: #1E6C93;
     padding: 20px;
-    border-radius: 50px;
+    border-radius: 5px;
     margin: auto;
     width: 80%;
     border-width: 5px;
-    border-color: #f1f1f1;
+    border-color: rgba(0, 0, 0, 0.125);
     border-style: solid;
     box-align: center;
     
@@ -169,8 +248,8 @@ h1.team{
 
 }
 img.team-member-images{
-    height: 370px;
-    width: 350px;
+    height: 320px;
+    width: 400px;
 }
 h3.team-members,h2.team-members{
     color: white;
@@ -180,17 +259,18 @@ h3.team-members,h2.team-members{
     font-size: 60px;
     text-align: center;
 }
-
-#list-2 {
-
-   text-align: center;
-}
-ul{
-    padding: 0px;
+#container>ul{
     text-align: center;
 }
+#container>ul li{
+    list-style-type: none;
+    padding: 0px;
+    text-align: center;
+    display: inline-block;
+    
+}
 div>h1{
-    color: white;
+    color:#263349;
 }
 div > h2{
     color: white;
@@ -223,7 +303,7 @@ img.team-member-images{
     text-align: center;
     align-items: center;
     margin: auto;
-    border-radius: 10px;
+    border-radius: 20px;
 
 
 }
@@ -236,7 +316,7 @@ img.team-member-images{
     width: 70%;
     height: 40px;
     font-size:20px;
-    border-radius: 10px;
+    border-radius: 30px;
 }
 
 p{
@@ -247,4 +327,41 @@ hr{
 
     color: grey;
     width: 80%;
+}
+
+.hosted-github{
+    font-family:Verdana, Geneva, Tahoma, sans-serif; 
+    text-align: center;
+}
+
+
+
+.contact{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:white;
+    text-decoration: none;  
+    text-align: center; 
+}
+@media (max-width:700px){
+
+    .nav-header-container{
+        width: 45%;
+    }
+    #nav-items-list{
+        width: 20%;
+        float: left;
+    }
+
+
+
+    
+}
+
+@media(min-width:700px){
+
+    .navbar-toggler{
+        display: none;
+    }
+
+
 }
