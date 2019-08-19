@@ -14,6 +14,12 @@ li>address{
     display: inline;
 }
 
+.name-div h3,.emailid-div a,.phoneid-div h3{
+
+    
+    color: black;
+}
+
 address> a{
     color: #FFF;
 }
@@ -87,6 +93,30 @@ a.navbar-brand{
     
 }
 
+div.contactus-info{
+
+   text-align: center;
+   width:fit-content;
+   margin: auto;
+}
+.contactus-info>div{
+    text-align: center;
+    padding: 20px;
+    display: table-cell;
+   
+}
+.contact-us{
+    text-align: center;
+    font-size: 20px;
+    color: black;
+
+}
+.container #contactus h2{
+    margin: auto;
+    text-align: center;
+    color:  #4285F4;
+}
+
 
 #nav-items-list>li{
 
@@ -110,7 +140,7 @@ a.navbar-brand{
 #Team.nav-a:hover,#Team.active{
     background-color: #DB4437;
     border-radius:100px;
-    transition-duration: 1s;
+   
 
 }
 #Workshops.nav-a:hover,#Workshops.active{
@@ -167,7 +197,7 @@ a.nav-a{
 
 
 }
-.dsc-home{
+.dsc-home,.contact-us{
 
 
     background-color: white;
@@ -178,7 +208,7 @@ a.nav-a{
     margin: 20px 100px 20px 100px;
    
 }
-div.dsc-home{
+div.dsc-home,.contact-us{
     border-color: rgba(0, 0, 0, 0.125);
    border-radius: 10px;   
     border-width: 1px;
@@ -210,6 +240,13 @@ p.dsc-home{
 
     
 }
+#DSC-logo{
+
+    float: left;
+
+    height: 200px;
+    width: 300px;
+}
 
 #dsc-title{
 
@@ -229,7 +266,7 @@ p.dsc-home{
 
 .team{
 
-    background-color: #1E6C93;
+    background-color: #631ed4;
     padding: 20px;
     border-radius: 5px;
     margin: auto;
@@ -247,9 +284,37 @@ h1.team{
     color: white;
 
 }
+
+.social-round-icon{
+
+    color: #838383;
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    line-height: 32px;
+    font-size: 15px;
+    text-align: center;
+
+
+    border: 1px solid #838383;
+    border-radius: 50px;
+    -webkit-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
+}
+
+.social-round-icon:hover{
+
+    width:50px;
+    background-color: blue;
+    color: white;
+
+
+}
 img.team-member-images{
-    height: 320px;
-    width: 400px;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
 }
 h3.team-members,h2.team-members{
     color: white;
@@ -272,21 +337,16 @@ h3.team-members,h2.team-members{
 div>h1{
     color:#263349;
 }
-div > h2{
+div > h2.team-members{
     color: white;
     font-family: "Open Sans";
 }
-div>h3{
+div>h3.team-members{
     color: white;
     font-family: "Open Sans";
 
 }
-img.team-member-images{
 
-    height:320px;
-    width: 290px;
-    padding: 20px;    
-}
 #image{
     float: left;
 
@@ -312,11 +372,17 @@ img.team-member-images{
     color: #f1f1f1;
     transition-duration: 0.6s;
 }
+#apply.apply-team-core{
+   margin: auto;
+    text-align: center;
+}
 #btn-apply-for-team.apply-team-core{
-    width: 70%;
-    height: 40px;
+
+    text-align: center;
+    width: 25%;
+    height: 60px;
     font-size:20px;
-    border-radius: 30px;
+    
 }
 
 p{
